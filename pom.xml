@@ -12,6 +12,8 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <log4j2.version>2.14.1</log4j2.version>
+        <mysql-connector.version>8.0.23</mysql-connector.version>
+        <junit.version>4.12</junit.version>
     </properties>
     <packaging>war</packaging>
     <build>
@@ -54,7 +56,13 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.23</version>
+            <version>${mysql-connector.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

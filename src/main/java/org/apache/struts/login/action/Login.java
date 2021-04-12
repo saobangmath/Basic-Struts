@@ -1,14 +1,14 @@
-package org.apache.struts.register.action;
+package org.apache.struts.login.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts.register.model.Person;
+import org.apache.struts.login.model.Person;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class Register extends ActionSupport {
+public class Login extends ActionSupport {
     private Person person;
 
     @Override
@@ -19,7 +19,6 @@ public class Register extends ActionSupport {
             String username = "trtai";
             String password = "S@obang12345678901";
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println(person.getUsername() + " " + person.getPassword());
             Connection conn = DriverManager.getConnection(url, username, password);
             PreparedStatement ps = conn.prepareStatement("select * from DB.User where username = ? and password = ?");
             ps.setString(1, person.getUsername());
@@ -29,6 +28,10 @@ public class Register extends ActionSupport {
         }
         catch (Exception e){
             e.printStackTrace();
+        }
+        if (!status){
+            person.setPassword("");
+            person.setUsername("");
         }
         return status ? "Success" : "Error";
     }

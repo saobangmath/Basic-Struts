@@ -1,4 +1,4 @@
-package org.apache.struts.register.model;
+package org.apache.struts.login.model;
 
 public class Person {
     private String username, password;

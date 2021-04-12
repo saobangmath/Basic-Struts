@@ -7,10 +7,12 @@
     <title>Login Form</title>
   </head>
   <body>
-    <s:form action = "register">
+  <center>
+    <s:form action = "login">
         <s:textfield  name = "person.username"  label = "Username"/>
         <s:textfield  name = "person.password" label = "Password"/>
-        <s:submit/>
-    </s:form>
+        <s:submit value = "Login"/>
+     </s:form>
+    <center>
   </body>
 </html>

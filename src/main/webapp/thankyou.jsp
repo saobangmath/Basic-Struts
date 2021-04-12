@@ -6,6 +6,9 @@
     <title>Login Page</title>
   </head>
   <body>
-    <h1>Thank you!</h1>
+    <center>
+        <h1>Successful login!</h1>
+        <a href="/BasicStrutsApp/index.jsp">Back to main</a>
+    </center>
   </body>
 </html>
