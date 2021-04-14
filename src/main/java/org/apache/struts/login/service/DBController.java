@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class LoginService {
+public class DBController {
     static final String dbUsername = "trtai";
     static final String dbPassword = "S@obang12345678901";
     static final String dbName = "DB";

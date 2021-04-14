@@ -3,9 +3,9 @@ package org.apache.struts.login.action;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.struts.login.model.Person;
-import org.apache.struts.login.service.LoginService;
+import org.apache.struts.login.service.DBController;
 
-public class Login extends ActionSupport {
+public class LoginController extends ActionSupport {
     private Person person;
 
     @Override
@@ -19,7 +19,7 @@ public class Login extends ActionSupport {
             addActionError("Username & Password cannot be blank!");
         }
         else{
-            status = LoginService.validate(username, password);
+            status = DBController.validate(username, password);
             if (!status){
                 reset();
                 addActionError("Invalid Username & Password!");

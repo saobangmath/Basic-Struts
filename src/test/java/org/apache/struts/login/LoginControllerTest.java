@@ -1,13 +1,10 @@
 package org.apache.struts.login;
 
 
-import com.opensymphony.xwork2.ActionProxy;
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts.login.action.Login;
 //import org.apache.struts2.StrutsTestCase;
 import org.junit.Test;
 
-public class LoginTest{ //extends StrutsTestCase {
+public class LoginControllerTest { //extends StrutsTestCase {
 
     @Test
     public void testExecuteValidationPasses() throws Exception {
@@ -15,7 +12,7 @@ public class LoginTest{ //extends StrutsTestCase {
 //        request.setParameter("person.password", "Tai");
 //
 //        ActionProxy actionProxy = getActionProxy("/login.action");
-//        Login action = (Login) actionProxy.getAction() ;
+//        LoginController action = (LoginController) actionProxy.getAction() ;
 //
 //        assertNotNull("The action is null but should not be.", action);
 //
