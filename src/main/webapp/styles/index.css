@@ -1,0 +1,66 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  height: 100%;
+  background-color: #36383a;
+}
+
+body {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 30%;
+  border: 3px solid #0e4ba1;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  min-width: 340px;
+}
+
+.formButton input {
+  border: 1px solid #0e4ba1;
+  background-color: #0e4ba1;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.tdLabel label {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.tdInput input {
+  width: 20rem;
+  height: 1.5rem;
+}
+
+tr {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem auto;
+  width: 70%;
+}
+
+.errorMessage {
+  list-style-type: none;
+  color: red;
+  padding: 0;
+}

@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
+    <link href="./styles/thankyou.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <center>
