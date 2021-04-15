@@ -1,8 +1,8 @@
-package org.apache.struts.login.action;
+package cz3002.grp43.struts.login.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts.login.model.Person;
-import org.apache.struts.login.service.DBController;
+import cz3002.grp43.struts.login.model.Person;
+import cz3002.grp43.struts.login.service.DBController;
 import org.apache.commons.lang3.StringUtils;
 
 public class LoginAction extends ActionSupport {

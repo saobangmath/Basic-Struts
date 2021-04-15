@@ -1,8 +1,8 @@
-package org.apache.struts.login.service;
+package cz3002.grp43.struts.login.service;
 
 import com.opensymphony.xwork2.ActionProxy;
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts.login.action.LoginAction;
+import cz3002.grp43.struts.login.action.LoginAction;
 import org.apache.struts2.StrutsTestCase;
 import org.junit.Before;
 import org.junit.Test;

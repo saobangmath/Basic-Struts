@@ -1,4 +1,4 @@
-package org.apache.struts.login.model;
+package cz3002.grp43.struts.login.model;
 
 public class Person {
     private String username, password;

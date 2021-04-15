@@ -1,4 +1,4 @@
-package org.apache.struts.login.service;
+package cz3002.grp43.struts.login.service;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
