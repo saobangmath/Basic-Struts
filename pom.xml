@@ -8,14 +8,16 @@
     <modelVersion>4.0.0</modelVersion>
     <version>1.1.0</version>
     <properties>
+        <junit.version>4.12</junit.version>
+        <slf4j.version>1.7.3</slf4j.version>
+        <log4j2.version>2.14.1</log4j2.version>
         <struts2.version>2.5.26</struts2.version>
+        <mockito.version>2.21.0</mockito.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <log4j2.version>2.14.1</log4j2.version>
+        <apache-common.version>3.8.1</apache-common.version>
+        <struttestcase.version>2.5.26</struttestcase.version>
         <mysql-connector.version>8.0.23</mysql-connector.version>
-        <junit.version>4.12</junit.version>
-        <struts-testcase.version>2.0-1.1-2.3</struts-testcase.version>
-        <slf4j.version>1.7.3</slf4j.version>
     </properties>
     <packaging>war</packaging>
     <build>
@@ -67,11 +69,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>strutstestcase</groupId>
-            <artifactId>strutstestcase</artifactId>
-            <version>${struts-testcase.version}</version>
-        </dependency>
-        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
@@ -93,6 +90,21 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-junit-plugin</artifactId>
+            <version>${struttestcase.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${apache-common.version}</version>
         </dependency>
     </dependencies>
 </project>

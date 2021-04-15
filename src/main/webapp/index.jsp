@@ -12,8 +12,8 @@
        <s:actionerror />
    </s:if>
   <header>
+      <h1>Created By: TRAN ANH TAI, CAI ZIXIN, CLARENCE CHEW KAI WEI</h1>
       <h1>CZ3002 Login Webapp with Struts2 </h1>
-      <h3>By: TRAN ANH TAI, CAI ZIXIN, CLARENCE CHEW KAI WEI</h3>
   </header>
   <center>
     <s:form action = "login">

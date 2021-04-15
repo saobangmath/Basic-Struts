@@ -1,12 +1,15 @@
 package org.apache.struts.login.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.struts.login.model.Person;
 import org.apache.struts.login.service.DBController;
+import org.apache.commons.lang3.StringUtils;
 
-public class LoginController extends ActionSupport {
+public class LoginAction extends ActionSupport {
+
     private Person person;
+
+    private DBController dbController = new DBController();
 
     @Override
     public String execute(){
@@ -15,17 +18,16 @@ public class LoginController extends ActionSupport {
         boolean status = false;
         if (StringUtils.isEmpty(username) || StringUtils.isEmpty(password)){
             reset();
-            System.out.println("Action error");
             addActionError("Username & Password cannot be blank!");
         }
         else{
-            status = DBController.validate(username, password);
+            status = dbController.validate(username, password);
             if (!status){
                 reset();
                 addActionError("Invalid Username & Password!");
             }
         }
-        return status ? "Success" : "Error";
+        return status ? SUCCESS : ERROR;
     }
 
     public Person getPerson(){
@@ -34,6 +36,14 @@ public class LoginController extends ActionSupport {
 
     public void setPerson(Person person) {
         this.person = person;
+    }
+
+    public DBController getDbController() {
+        return dbController;
+    }
+
+    public void setDbController(DBController dbController) {
+        this.dbController = dbController;
     }
 
     public void reset(){
